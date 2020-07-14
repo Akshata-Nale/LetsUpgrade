@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+	Akshata Nale
+	</br>
+        <title>
+            Print
+        </title>
+    </head>
+    <body>
+        <script>
+        var date = new Date();
+		var days = ['Sunday', 'Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		document.write("Today is : " + days[date.getDay()]);
+		document.write("<br/>"); 
+		
+		var hours = date.getHours();
+		var min = date.getMinutes();
+		var sec = date.getSeconds();
+		var ampm = hours >= 12 ? "PM":"AM";
+		if(hours>12)
+			{
+				hours-=12;
+			}
+		
+		document.write("Current time is : "+hours +ampm +":"+min+":"+sec);
+		
+      
+        </script>
+    </body>
+	</br>
+	  <button type="button" name="button" onclick="window.print();">Print</button>
+        
+</html>
